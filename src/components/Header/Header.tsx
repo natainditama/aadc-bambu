@@ -26,21 +26,21 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <StaticImage src="../../images/instagram.png" alt="Instagram" />
+          <StaticImage src="../../images/instagram.png" placeholder="tracedSVG" alt="Instagram" />
         </NavSocialLink>
         <NavSocialLink
           href="https://www.facebook.com/igusti.murniati.1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <StaticImage src="../../images/facebook.png" alt="Facebook" />
+          <StaticImage src="../../images/facebook.png" placeholder="tracedSVG" alt="Facebook" />
         </NavSocialLink>
         <NavSocialLink
           href="https://www.tiktok.com/@aadcbambu"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <StaticImage src="../../images/tiktok.png" alt="TikTok" />
+          <StaticImage src="../../images/tiktok.png" placeholder="tracedSVG" alt="TikTok" />
         </NavSocialLink>
       </NavSocial>
     </Navbar>
