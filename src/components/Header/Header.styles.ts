@@ -24,31 +24,38 @@ const Navbar = styled.header`
 const NavLogo = styled.div`
   display: block;
   transform: translate3d(20px, 40px, 0);
-  @media only screen and (min-width: 1000px) {
-    margin-bottom: 20px;
-  }
 `;
 
 const NavList = styled.ul`
   list-style: none;
-  padding-left: 0;
   text-align: right;
-  padding-right: 2rem;
-  line-height: 2.5;
-  margin: 10px;
+  padding-right: 30px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  & * + * {
+    margin-left: 10px;
+  }
   @media only screen and (min-width: 1000px) {
     & {
-      margin: 0;
-      transform: rotate(90deg);
-      transform-origin: 0px 150% 0px;
+      padding-top: 60px;
+      padding-right: 0;
+      flex-direction: column;
+    }
+    & * + * {
+      margin-left: 0;
+      margin-top: 20px;
     }
   }
 `;
 
 const NavListItem = styled.li`
-  font-size: 1.4rem;
   color: #141720;
-  letter-spacing: 1.45px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   & a {
     color: #141720;
@@ -60,11 +67,10 @@ const NavListItem = styled.li`
   }
   @media only screen and (min-width: 1000px) {
     & {
-      font-size: 0.8rem;
+      font-size: 1rem;
       letter-spacing: 2px;
-    }
-    & a {
-      font-weight: 600;
+      line-height: 1.5rem;
+      writing-mode: vertical-lr;
     }
   }
 `;
@@ -72,17 +78,11 @@ const NavListItem = styled.li`
 const NavSocial = styled.div`
   display: none;
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   left: 0;
-  padding: 1.5rem;
-  font-size: 1rem;
-  line-height: 0.8;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  & > * + * {
-    // margin-top: 6px;
-  }
   @media only screen and (min-width: 1000px) {
     & {
       display: flex;
