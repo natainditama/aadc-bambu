@@ -36,6 +36,8 @@ const GlobalStyle = createGlobalStyle`
 
   main{
     color: #F7F7F6;
+    min-height: 100vh;
+    padding-top: 120px;
   }
 
   hr {
