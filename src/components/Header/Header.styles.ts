@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const Navbar = styled.header`
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #f7f7f6;
   box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
@@ -10,10 +13,8 @@ const Navbar = styled.header`
   }
   @media only screen and (min-width: 1000px) {
     & {
-      position: fixed;
-      top: 0;
-      left: 0;
       bottom: 0;
+      right: auto;
       flex-direction: column;
       width: 60px;
       transition: 0.5s;
@@ -34,7 +35,7 @@ const NavList = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   & * + * {
     margin-left: 10px;
   }
