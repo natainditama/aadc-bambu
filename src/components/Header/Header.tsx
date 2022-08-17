@@ -1,9 +1,28 @@
 import React from "react";
 import { Navbar, NavLogo, NavList, NavListItem, NavSocial, NavSocialLink } from "./Header.styles";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import socialItems from "../../utils/constants/socialItems.constants";
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(
+        filter: { extension: { eq: "png" }, name: { in: ["facebook", "tiktok", "instagram"] } }
+      ) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              id
+              gatsbyImageData(placeholder: TRACED_SVG)
+            }
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Navbar>
       <NavLogo>
@@ -21,27 +40,18 @@ const Header = () => {
         </NavListItem>
       </NavList>
       <NavSocial>
-        <NavSocialLink
-          href="https://www.instagram.com/ayunibambu0404/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <StaticImage src="../../images/instagram.png" placeholder="tracedSVG" alt="Instagram" />
-        </NavSocialLink>
-        <NavSocialLink
-          href="https://www.facebook.com/igusti.murniati.1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <StaticImage src="../../images/facebook.png" placeholder="tracedSVG" alt="Facebook" />
-        </NavSocialLink>
-        <NavSocialLink
-          href="https://www.tiktok.com/@aadcbambu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <StaticImage src="../../images/tiktok.png" placeholder="tracedSVG" alt="TikTok" />
-        </NavSocialLink>
+        {data.allFile.edges.map(({ node: { name, childImageSharp } }: any, index: number) => {
+          return (
+            <NavSocialLink
+              href={socialItems[index].url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+            >
+              <GatsbyImage alt={name} image={childImageSharp.gatsbyImageData} />
+            </NavSocialLink>
+          );
+        })}
       </NavSocial>
     </Navbar>
   );
