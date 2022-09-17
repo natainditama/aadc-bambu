@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fontsource/source-sans-pro": "^4.5.11",
+    "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
@@ -29,7 +30,9 @@
     "postcss": "^8.4.16",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5"
+    "react-particles": "^2.3.1",
+    "styled-components": "^5.3.5",
+    "tsparticles": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.45",
