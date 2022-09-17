@@ -25,6 +25,11 @@ const Navbar = styled.header`
 const NavLogo = styled.div`
   display: block;
   transform: translate3d(20px, 40px, 0);
+  & a {
+    display: block;
+    height: max-content;
+    width: max-content;
+  }
 `;
 
 const NavList = styled.ul`
