@@ -22,7 +22,7 @@
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
-    "gatsby-plugin-sharp": "^4.20.0",
+    "gatsby-plugin-sharp": "^4.23.0",
     "gatsby-plugin-sitemap": "^5.20.0",
     "gatsby-plugin-styled-components": "^5.20.0",
     "gatsby-source-filesystem": "^4.20.0",
