@@ -19,7 +19,7 @@
     "@fontsource/source-sans-pro": "^4.5.11",
     "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^4.20.0",
+    "gatsby": "^4.24.4",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
