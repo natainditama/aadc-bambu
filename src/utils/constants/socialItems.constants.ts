@@ -6,14 +6,14 @@ interface SocialItems {
 
 const socialItems: Array<SocialItems> = [
   {
-    name: "instagram",
-    icon: "instagram.png",
-    url: "https://www.instagram.com/ayunibambu0404/",
-  },
-  {
     name: "facebook",
     icon: "facebook.png",
     url: "https://www.facebook.com/igusti.murniati.1",
+  },
+  {
+    name: "instagram",
+    icon: "instagram.png",
+    url: "https://www.instagram.com/ayunibambu0404/",
   },
   {
     name: "tiktok",
