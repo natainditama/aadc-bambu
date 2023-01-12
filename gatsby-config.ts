@@ -1,4 +1,23 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
+
+const corePlugins = [
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "src",
+      path: `${__dirname}/src`,
+    },
+  },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "images",
+      path: `${__dirname}/src/images`,
+    },
+  },
+];
+
+const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -8,7 +27,7 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [],
-}
+  plugins: [...corePlugins, ...imagePlugins],
+};
 
-export default config
+export default config;
