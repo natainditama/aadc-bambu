@@ -18,7 +18,6 @@ const corePlugins = [
 ];
 
 const devPlugins = [
-  "gatsby-plugin-mantine",
   {
     resolve: "gatsby-plugin-alias-imports",
     options: {

@@ -16,14 +16,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/server": "^11.10.0",
-    "@mantine/core": "^5.10.0",
     "@mantine/hooks": "^5.10.0",
     "gatsby": "^5.3.3",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^3.4.0",
-    "gatsby-plugin-mantine": "^5.0.0",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-source-filesystem": "^5.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
