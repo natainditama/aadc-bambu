@@ -17,7 +17,23 @@ const corePlugins = [
   },
 ];
 
-const devPlugins = ["gatsby-plugin-mantine"];
+const devPlugins = [
+  "gatsby-plugin-mantine",
+  {
+    resolve: "gatsby-plugin-alias-imports",
+    options: {
+      alias: {
+        "@src": "src",
+        "@components": "src/components",
+        "@assets": "src/assets",
+        "@pages": "src/pages",
+        "@types": "src/types",
+        "@utils": "src/utils",
+      },
+      extensions: ["js", "ts", "tsx", "jsx"],
+    },
+  },
+];
 
 const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];
 
