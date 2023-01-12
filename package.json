@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/lexend": "^4.5.14",
     "@mantine/hooks": "^5.10.0",
     "@material-tailwind/react": "^1.2.5",
     "gatsby": "^5.3.3",
