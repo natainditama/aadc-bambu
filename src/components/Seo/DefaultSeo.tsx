@@ -1,17 +1,16 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import useSiteMetadata from "@utils/hooks/useSiteMetadata";
-import defaultOpenGraphImage from "@images/og-default.png";
+import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import defaultOpenGraphImage from "@/images/og-default.png";
 
 const DEFAULT_LANG = "en";
 
-type Meta = React.DetailedHTMLProps<React.MetaHTMLAttributes<HTMLMetaElement>, HTMLMetaElement>[];
+type Meta = JSX.IntrinsicElements["meta"][];
 
-interface SEOProps {
+interface SEOProps  {
   title?: Queries.Maybe<string>;
   desc?: Queries.Maybe<string>;
   image?: Queries.Maybe<string>;
-  meta?: Meta;
 }
 
 const DefaultSeo: React.FC<SEOProps> = ({ title, desc = "", image }) => {
