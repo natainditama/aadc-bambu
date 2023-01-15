@@ -22,7 +22,7 @@ const VideoItem: React.FC<VideoItemProps> = ({ title, image, publishedAt, videoI
       <CardHeader className="relative">{image}</CardHeader>
       <CardBody>
         <a
-          href={`https://www.youtube.com/watch?v=${videoId}}`}
+          href={`https://www.youtube.com/watch?v=${videoId}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary hover:text-primary hover:underline"

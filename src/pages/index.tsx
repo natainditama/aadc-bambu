@@ -35,6 +35,7 @@ const HomePage: React.FC<PageProps> = () => {
                     key={item.id.videoId}
                     title={item.snippet.title}
                     publishedAt={item.snippet.publishedAt}
+                    videoId={item.id.videoId}
                     image={
                       <img src={item.snippet.thumbnails.medium.url} alt={item.snippet.title} />
                     }
