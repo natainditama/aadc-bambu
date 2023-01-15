@@ -6,6 +6,11 @@ interface Socials {
 
 const socials: Array<Socials> = [
   {
+    name: "facebook",
+    icon: "facebook.png",
+    url: "https://www.facebook.com/igusti.murniati.1",
+  },
+  {
     name: "instagram",
     icon: "instagram.png",
     url: "https://www.instagram.com/ayunibambu0404/",
@@ -14,11 +19,6 @@ const socials: Array<Socials> = [
     name: "tiktok",
     icon: "tiktok.png",
     url: "https://www.tiktok.com/@aadcbambu",
-  },
-  {
-    name: "facebook",
-    icon: "facebook.png",
-    url: "https://www.facebook.com/igusti.murniati.1",
   },
 ];
 
