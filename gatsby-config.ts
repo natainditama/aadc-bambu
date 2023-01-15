@@ -1,4 +1,10 @@
 import type { GatsbyConfig } from "gatsby";
+import meta from "./gatsby-meta";
+import * as dotenv from "dotenv";
+
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const corePlugins = [
   {
@@ -22,30 +28,52 @@ const devPlugins = [
     resolve: "gatsby-plugin-alias-imports",
     options: {
       alias: {
-        "@src": "src",
-        "@components": "src/components",
-        "@assets": "src/assets",
-        "@pages": "src/pages",
-        "@types": "src/types",
-        "@utils": "src/utils",
+        "@/*": "src/",
+        "@/components": "src/components/",
+        "@/images": "src/images/",
+        "@/pages": "src/pages/",
+        "@/types": "src/types/",
+        "@/utils": "src/utils/",
       },
       extensions: ["js", "ts", "tsx", "jsx"],
     },
   },
   "gatsby-plugin-postcss",
+  "gatsby-plugin-react-helmet",
 ];
 
 const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];
 
-const config: GatsbyConfig = {
-  siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+const searchPlugins = ["gatsby-plugin-sitemap", "gatsby-plugin-robots-txt"];
+
+const pwaPlugins = [
+  {
+    resolve: "gatsby-plugin-manifest",
+    options: {
+      name: meta.title,
+      short_name: meta.title,
+      description: meta.description,
+      lang: meta.lang,
+      start_url: "/",
+      background_color: "#ffffff",
+      theme_color: "#ffffff",
+      display: "standalone",
+      icon: meta.favicon,
+      icon_options: {
+        purpose: "any maskable",
+      },
+    },
   },
+  "gatsby-plugin-offline",
+];
+
+const config: GatsbyConfig = {
+  siteMetadata: meta,
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [...corePlugins, ...imagePlugins, ...devPlugins],
+  plugins: [...corePlugins, ...imagePlugins, ...devPlugins, ...searchPlugins, ...pwaPlugins],
 };
 
 export default config;
