@@ -9,7 +9,12 @@ enum StateHeader {
   Toggle,
 }
 
-const Header: React.FC = () => {
+export type HeaderProps = {
+  title: Queries.Maybe<string>;
+  description: Queries.Maybe<string>;
+};
+
+const Header: React.FC<HeaderProps> = ({ title, description }: HeaderProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [, setScrollLocked] = useScrollLock(true);
   const [, scrollTo] = useWindowScroll();
@@ -42,12 +47,12 @@ const Header: React.FC = () => {
       <div className="intro__content">
         <div className="container mx-auto">
           <Typography as="h1" variant="h1" className="mb-2">
-            AADC Bambu
+            {title}
           </Typography>
           <div className="flex lg:grid grid-cols-2 items-center justify-between space-x-6">
             <div>
               <Typography as="p" variant="paragraph" className="mb-2">
-                Terimakasih kepada Tuhan Yang Maha Esa atas anugerah yang luar biasa
+                {description}
               </Typography>
               <div className="flex space-x-4 items-center lg:space-x-6">
                 <button
