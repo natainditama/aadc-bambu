@@ -2,19 +2,15 @@ import React from "react";
 import { Typography, IconButton } from "@material-tailwind/react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { Socials } from "@/utils/constants/socials";
-
-export type FooterProps = {
-  title: Queries.Maybe<string>;
-  description: Queries.Maybe<string>;
-  socials: Socials[];
-};
+import { socials } from "@/utils/constants/socials";
+import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 
 export type FooterData = {
   allFile: Queries.FileConnection;
 };
 
-const Footer: React.FC<FooterProps> = ({ title, description, socials }: FooterProps) => {
+const Footer: React.FC = () => {
+  const { title, description } = useSiteMetadata();
   const { allFile }: FooterData = useStaticQuery(graphql`
     query {
       allFile(
@@ -64,7 +60,7 @@ const Footer: React.FC<FooterProps> = ({ title, description, socials }: FooterPr
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="mx-auto w-full px-4 text-center">
             <Typography variant="small" className="font-normal text-blue-gray-500">
-              Copyright &copy; ${new Date().getFullYear()} ${title}
+              Copyright &copy; {new Date().getFullYear()} {title}
             </Typography>
           </div>
         </div>

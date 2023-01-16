@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Typography } from "@material-tailwind/react";
 import { StaticImage } from "gatsby-plugin-image";
 import { useScrollLock, useWindowScroll } from "@mantine/hooks";
+import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 
 enum StateHeader {
   Open,
@@ -9,12 +10,8 @@ enum StateHeader {
   Toggle,
 }
 
-export type HeaderProps = {
-  title: Queries.Maybe<string>;
-  description: Queries.Maybe<string>;
-};
-
-const Header: React.FC<HeaderProps> = ({ title, description }: HeaderProps) => {
+const Header: React.FC = () => {
+  const { title, description } = useSiteMetadata()
   const containerRef = useRef<HTMLDivElement>(null);
   const [, setScrollLocked] = useScrollLock(true);
   const [, scrollTo] = useWindowScroll();
