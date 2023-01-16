@@ -6,8 +6,8 @@ import { useQuery } from "@tanstack/react-query";
 import { Video } from "@/types/videos";
 
 const CHANNEL_ID = "UCVVQiuzOR_MlSOax9KPnuIA";
-const API_KEY = process.env.YOUTUBE_API_KEY;
-const BASE_URL = process.env.YOUTUBE_API_URL;
+const API_KEY = process.env.GATSBY_YOUTUBE_API_KEY;
+const BASE_URL = process.env.GATSBY_YOUTUBE_API_URL;
 
 const HomePage: React.FC<PageProps> = () => {
   const { status, data, error } = useQuery({
