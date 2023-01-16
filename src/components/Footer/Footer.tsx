@@ -42,14 +42,7 @@ const Footer: React.FC = () => {
               {socials.map(({ name, url }, index: number) => (
                 <a key={name} href={url} target="_blank" rel="noopener noreferrer">
                   <IconButton color="white" className="rounded-full">
-                    <GatsbyImage
-                      className="w-[45px]"
-                      image={
-                        allFile.edges[index].node.childImageSharp
-                          ?.gatsbyImageData as IGatsbyImageData
-                      }
-                      alt={name}
-                    />
+                    <i className={`bx bxl-${name}`}></i>
                   </IconButton>
                 </a>
               ))}
