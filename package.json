@@ -21,6 +21,7 @@
     "@material-tailwind/react": "^1.2.5",
     "@tanstack/react-query": "^4.22.0",
     "axios": "^1.2.2",
+    "boxicons": "^2.1.4",
     "gatsby": "^5.3.3",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^3.4.0",
