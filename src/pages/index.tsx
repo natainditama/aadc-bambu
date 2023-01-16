@@ -6,13 +6,15 @@ import { useQuery } from "@tanstack/react-query";
 import { Video } from "@/types/videos";
 
 const CHANNEL_ID = "UCVVQiuzOR_MlSOax9KPnuIA";
+const API_KEY = process.env.YOUTUBE_API_KEY;
+const BASE_URL = process.env.YOUTUBE_API_URL;
 
 const HomePage: React.FC<PageProps> = () => {
   const { status, data, error } = useQuery({
     queryKey: ["posts"],
     queryFn: async (): Promise<{ items: Array<Video> }> => {
       const { data } = await axios.get(
-        `${process.env.YOUTUBE_API_URL}search?part=snippet&part=id&channelId=${CHANNEL_ID}&order=viewCount&maxResults=12&key=${process.env.YOUTUBE_API_KEY}`
+        `${BASE_URL}search?part=snippet&part=id&channelId=${CHANNEL_ID}&order=viewCount&maxResults=12&key=${API_KEY}`
       );
       return data;
     },
