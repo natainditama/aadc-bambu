@@ -21,7 +21,7 @@ Removed sections:
   <h1>AADC Bambu</h1>
   
   <p>
-    AADC Bambu is the official website of AADC Bambu YouTube channel built with Gatsby
+    The official AADC Bambu YouTube channel website was built with Gatsby.
   </p>
 
   
