@@ -1,7 +1,5 @@
 import React from "react";
 import { Typography, IconButton } from "@material-tailwind/react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { socials } from "@/utils/constants/socials";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 
@@ -11,23 +9,6 @@ export type FooterData = {
 
 const Footer: React.FC = () => {
   const { title, description } = useSiteMetadata();
-  const { allFile }: FooterData = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: { extension: { eq: "png" }, name: { in: ["facebook", "tiktok", "instagram"] } }
-      ) {
-        edges {
-          node {
-            name
-            id
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <footer className="relative pt-16 pb-6">
@@ -38,7 +19,7 @@ const Footer: React.FC = () => {
               {title}
             </Typography>
             <Typography className="font-normal text-blue-gray-500">{description}</Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
+            {/* <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
               {socials.map(({ name, url }, index: number) => (
                 <a key={name} href={url} target="_blank" rel="noopener noreferrer">
                   <IconButton color="white" className="rounded-full">
@@ -46,7 +27,7 @@ const Footer: React.FC = () => {
                   </IconButton>
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
         <hr className="my-6 border-gray-300" />

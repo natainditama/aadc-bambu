@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
-import { Typography } from "@material-tailwind/react";
+import { IconButton, Typography } from "@material-tailwind/react";
 import { StaticImage } from "gatsby-plugin-image";
 import { useScrollLock, useWindowScroll } from "@mantine/hooks";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import { socials } from "@/utils/constants/socials";
 
 enum StateHeader {
   Open,
@@ -11,7 +12,7 @@ enum StateHeader {
 }
 
 const Header: React.FC = () => {
-  const { title, description } = useSiteMetadata()
+  const { title, links } = useSiteMetadata()
   const containerRef = useRef<HTMLDivElement>(null);
   const [, setScrollLocked] = useScrollLock(true);
   const [, scrollTo] = useWindowScroll();
@@ -28,7 +29,6 @@ const Header: React.FC = () => {
         containerRef.current.classList.toggle("open");
         setScrollLocked((locked) => !locked);
       }
-      scrollTo({ y: 0 });
     }
   }
 
@@ -48,9 +48,17 @@ const Header: React.FC = () => {
           </Typography>
           <div className="flex lg:grid grid-cols-2 items-center justify-between space-x-6">
             <div>
-              <Typography as="p" variant="paragraph" className="mb-2">
-                {description}
-              </Typography>
+              <div className="mb-2">
+                {socials.map(({ color, name, url }) => (
+                  <a key={name} href={url} target="_blank" rel="noopener noreferrer">
+                    <IconButton color="white" className="rounded-full">
+                      <Typography color={color} as="span" variant="h5">
+                        <i className={`bx bxl-${name}`} />
+                      </Typography>
+                    </IconButton>
+                  </a>
+                ))}
+              </div>
               <div className="flex space-x-4 items-center lg:space-x-6">
                 <button
                   className="font-medium text-primary hover:underline"
