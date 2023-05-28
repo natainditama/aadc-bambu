@@ -32,7 +32,7 @@ Removed sections:
     <img src="https://img.shields.io/github/last-commit/natainditama/aadc-bambu" alt="last update" />
   </a>
   <a href="https://github.com/natainditama/aadc-bambu/network/members">
-    <img src="https://img.shields.io/github/forks/natainditama/aadc-bambuaadc-bambuaadc-bambu" alt="forks" />
+    <img src="https://img.shields.io/github/forks/natainditama/aadc-bambu" alt="forks" />
   </a>
   <a href="https://github.com/natainditama/aadc-bambuaadc-bambu/stargazers">
     <img src="https://img.shields.io/github/stars/natainditama/aadc-bambu" alt="stars" />
@@ -134,3 +134,8 @@ Distributed under the no License. See LICENSE.txt for more information.
 Nata Inditama - [@natainditama](https://t.me/natainditama) - natainditama.dev@gmail.com
 
 Project Link: [https://github.com/natainditama/aadc-bambu](https://github.com/natainditama/aadc-bambu)
+
+<!-- Acknowledgements -->
+## Acknowledgements
+
+- [Gatsbyjs](https://www.gatsbyjs.com/)
