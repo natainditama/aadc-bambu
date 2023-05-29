@@ -1,6 +1,7 @@
 const metaConfig = {
   title: "AADC Bambu",
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sed consequuntur exercitationem dolorem accusantium? Repudiandae, deserunt`,
+  titleTemplate: "Situs resmi saluran YouTube AADC Bambu",
+  description: "Jelajahi situs resmi saluran YouTube AADC Bambu dan temukan konten menarik dan lagu-lagu nostalgia yang mengingatkan pada momen berharga. Ikuti perjalanan konten seru dan menghibur dari kami sekarang!",
   author: "natainditama",
   siteUrl: "https://aadc-bambu.web.app/",
   lang: "id",
@@ -11,6 +12,7 @@ const metaConfig = {
     facebook: "https://www.facebook.com/igusti.murniati.1",
   },
   favicon: "src/images/logo.jpg",
+  image: "src/images/og-default.png",
 };
 
 export default metaConfig
