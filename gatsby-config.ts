@@ -38,8 +38,6 @@ const devPlugins = [
       extensions: ["js", "ts", "tsx", "jsx"],
     },
   },
-  "gatsby-plugin-postcss",
-  "gatsby-plugin-react-helmet",
 ];
 
 const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];

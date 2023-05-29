@@ -18,24 +18,9 @@ const VideoItem: React.FC<VideoItemProps> = ({ title, image, publishedAt, videoI
   };
   
   return (
-    <Card className="relative group rounded-md mt-8">
-      <CardHeader className="relative">{image}</CardHeader>
-      <CardBody>
-        <a
-          href={`https://www.youtube.com/watch?v=${videoId}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary hover:text-primary hover:underline"
-        >
-          <Typography variant="paragraph">{title}</Typography>
-        </a>
-      </CardBody>
-      <CardFooter divider className="flex items-center py-3">
-        <Typography variant="small" className="opacity-80">
-          {publishDate.toLocaleDateString(undefined, options)}
-        </Typography>
-      </CardFooter>
-    </Card>
+    <>
+      Card
+    </>
   );
 };
 
