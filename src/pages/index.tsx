@@ -34,9 +34,9 @@ export default function HomePage() {
       >
         <div className="container mt-5">
           <div className="row justify-content-center">
-            <div className="col-lg-7 text-center">
+            <div className="col-lg-8 text-center">
               <h1 className="fw-bold mb-3 lh-base">
-                Temukan <span>Konten Menarik</span> dan Nostalgia di YouTube AADC Bambu
+                Temukan <span className="text-white">Konten Menarik</span> dan Nostalgia di YouTube AADC Bambu
               </h1>
               <p className="lh-base">{description}</p>
               <a href="http://"></a>
@@ -60,7 +60,7 @@ export default function HomePage() {
             <span>Error: {error.message}</span>
           ) : (
             <div className="row gy-4 justify-content-center">
-              {data?.items.map((item) => {
+              {data && data?.items.map((item) => {
                 return (
                   <div className="col-xl-4 col-lg-4 col-md-6" key={item.id.videoId}>
                     <div className="gallery-item h-100">
