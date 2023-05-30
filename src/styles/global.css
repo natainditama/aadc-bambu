@@ -1,3 +1,56 @@
-body{
-  background: red;
+:root {
+  --color-default: #000000;
+  --color-primary: #16a34a;
+  --color-secondary: #161718;
+  --color-background: #fafafa;
+  --font-primary: "Inter", var(--font-default);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body, .hero{
+  background-color: var(--color-background);
+  color: var(--color-default);
+}
+
+.hero p, .navbar a, .footer, .footer .copyright, .footer .credits{
+  color: var(--color-default);
+}
+
+.gallery .gallery-item img{
+  width: 100%;
+}
+
+.header{
+  backdrop-filter: blur(4px);
+  background-color: rgba(250,250,250, 0.8);
+}
+
+.header .header-social-links a{
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.header .header-social-links{
+  padding-right: 0;
+}
+
+.hero h1 span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.hero h1 span:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-primary);
+  z-index: -1;
 }
