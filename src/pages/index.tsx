@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
               <h1 className="fw-bold mb-3 lh-base">
-                Temukan <span>Konten Menarik</span> dan Nostalgia di YouTube AADC Bambu
+                Temukan <span className="text-white">Konten Menarik</span> dan Nostalgia di YouTube AADC Bambu
               </h1>
               <p className="lh-base">{description}</p>
               <a
@@ -59,12 +59,12 @@ export default function HomePage() {
             <span>Error: {error.message}</span>
           ) : (
             <div className="row gy-4 justify-content-center">
-              {data?.items.length && data?.items.map((item) => {
+              {data?.items ? data?.items.map((item) => {
                 return (
                   <div className="col-xl-4 col-lg-4 col-md-6" key={item.id.videoId}>
                     <div className="gallery-item h-100">
                       <img
-                        src={item.snippet.thumbnails.high.url}
+                        src={item.snippet.thumbnails.medium.url}
                         alt={item.snippet.title}
                         loading="lazy"
                         className="img-fluid"
@@ -85,7 +85,7 @@ export default function HomePage() {
                 );
               })}
             </div>
-          )}
+          ) : null}
         </div>
       </section>
     </>
