@@ -42,7 +42,7 @@ const devPlugins = [
 
 const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];
 
-const searchPlugins = ["gatsby-plugin-sitemap", "gatsby-plugin-robots-txt"
+const searchPlugins = ["gatsby-plugin-sitemap", "gatsby-plugin-robots-txt",
 {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
