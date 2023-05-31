@@ -1,6 +1,5 @@
 import { socialLinks } from "@/utils/constants/site";
 import React from "react";
-import { Link } from "gatsby";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 
 export default function Header() {
@@ -14,7 +13,7 @@ export default function Header() {
         </a>
         <div className="header-social-links">
           {socialLinks.map((link, index) => (
-            <a href={link.url} className={`text-body ${link.name}`} key={index}>
+            <a href={link.url} className={`text-body ${link.name}`} key={index} aria-label={link.name}>
               <i className={`bi bi-${link.name}`}></i>
             </a>
           ))}

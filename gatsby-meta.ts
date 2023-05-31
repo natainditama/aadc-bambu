@@ -8,12 +8,12 @@ const metaConfig = {
   lang: "id",
   links: {
     github: "https://github.com/natainditama/aadc-bambu",
-    instagram: "https://www.instagram.com/ayunibambu0404/",
+    instagram: "https://www.instagram.com/aadcbambu0404/",
     tiktok: "https://www.tiktok.com/@aadcbambu",
     facebook: "https://www.facebook.com/igusti.murniati.1",
   },
   favicon: "src/images/logo.jpg",
-  image: "src/images/og-default.png",
+  image: "/og-default.png",
 };
 
 export default metaConfig

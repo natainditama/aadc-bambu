@@ -25,7 +25,11 @@ export default function Meta({ title, description, pathname, children }: SEOProp
 
   return (
     <>
-      <title>{seo.title} - {titleTemplate}</title>
+      <html lang={`${lang}`} />
+      <title>
+        {seo.title} - {titleTemplate}
+      </title>
+      <meta name="robots" content="noindex" />
       <meta name="title" content={`${seo.title} - ${titleTemplate}`} />
       <meta name="description" content={`${seo.description}`} />
       <link rel="canonical" href={`${seo.url}`} />
@@ -46,6 +50,6 @@ export default function Meta({ title, description, pathname, children }: SEOProp
       <meta property="twitter:image" content={`${seo.image}`} />
       {children}
     </>
-  )
+  );
 }
 
