@@ -1,6 +1,7 @@
 :root {
   --color-default: #000000;
   --color-primary: #15803D;
+  --color-primary-hover: #16a34a;
   --color-secondary: #161718;
   --color-background: #fafafa;
   --font-primary: "Inter", var(--font-default);
@@ -54,3 +55,12 @@ html, body, .hero{
   background: var(--color-primary);
   z-index: -1;
 }
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+.hero .btn-get-started:hover, .scroll-top:hover {
+  background: var(--color-primary-hover);
+}
+

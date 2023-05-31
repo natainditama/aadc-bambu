@@ -64,8 +64,10 @@ export default function HomePage() {
                   <div className="col-xl-4 col-lg-4 col-md-6" key={item.id.videoId}>
                     <div className="gallery-item h-100">
                       <img
-                        src={item.snippet.thumbnails.medium.url}
+                        src={item.snippet.thumbnails.high.url}
                         alt={item.snippet.title}
+                        width={item.snippet.thumbnails.high.width}
+                        height={item.snippet.thumbnails.high.height}
                         loading="lazy"
                         className="img-fluid"
                       />

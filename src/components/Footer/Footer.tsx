@@ -8,7 +8,7 @@ export default function Footer() {
     <footer id="footer" className="footer">
       <div className="container">
         <div className="copyright">
-          Copyright &copy; {new Date().getFullYear()}{" "}{title}. All Rights Reserved.
+          Copyright &copy;{new Date().getFullYear()}{" "}{title?.replace(" ", "")}. All Rights Reserved.
         </div>
         <div className="credits">
           Designed by{" "}

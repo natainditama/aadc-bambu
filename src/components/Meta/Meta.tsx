@@ -19,9 +19,9 @@ export default function Meta({ title, description, pathname, children }: SEOProp
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
+    image: image.images.fallback.src,
     url: `${siteUrl}${pathname || ``}`,
-  }
+  };
 
   return (
     <>
