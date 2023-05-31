@@ -18,11 +18,6 @@ const useSiteMetadata = () => {
             author
             siteUrl
             lang
-            image: file(absolutePath: { glob: "**/src/images/og-default.png" }) {
-              childImageSharp {
-                gatsbyImageData(layout: FIXED, width: 1200)
-              }
-            }
           }
         }
       }

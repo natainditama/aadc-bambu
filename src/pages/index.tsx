@@ -66,8 +66,6 @@ export default function HomePage() {
                       <img
                         src={item.snippet.thumbnails.high.url}
                         alt={item.snippet.title}
-                        width={item.snippet.thumbnails.high.width}
-                        height={item.snippet.thumbnails.high.height}
                         loading="lazy"
                         className="img-fluid"
                       />

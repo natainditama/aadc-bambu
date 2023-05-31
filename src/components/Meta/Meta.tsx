@@ -1,10 +1,8 @@
 import React from "react";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 import defaultOpenGraphImage from "@/images/og-default.png";
+import { getImage, getImageData } from "gatsby-plugin-image";
 
-const DEFAULT_LANG = "en";
-
-type Meta = JSX.IntrinsicElements["meta"][];
 
 interface SEOProps  {
   title?: string;
@@ -14,12 +12,12 @@ interface SEOProps  {
 }
 
 export default function Meta({ title, description, pathname, children }: SEOProps)  {
-   const { title: defaultTitle, titleTemplate,  description: defaultDescription, image, siteUrl, lang } = useSiteMetadata()
+   const { title: defaultTitle, titleTemplate,  description: defaultDescription, siteUrl, lang } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: image.images.fallback.src,
+    image: defaultOpenGraphImage,
     url: `${siteUrl}${pathname || ``}`,
   };
 
