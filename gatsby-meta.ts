@@ -13,6 +13,7 @@ const metaConfig = {
     facebook: "https://www.facebook.com/igusti.murniati.1",
   },
   favicon: "src/images/logo.jpg",
+  image: "https://user-images.githubusercontent.com/81244669/242354967-c9f69bfe-02ce-4c2a-a606-39fe8793cc2c.png"
 };
 
 export default metaConfig
