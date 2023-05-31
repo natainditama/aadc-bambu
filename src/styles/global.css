@@ -1,7 +1,7 @@
 :root {
   --color-default: #000000;
-  --color-primary: #15803D;
-  --color-primary-hover: #16a34a;
+  --color-primary: #61872c;
+  --color-primary-hover: #264d0a;
   --color-secondary: #161718;
   --color-background: #fafafa;
   --font-primary: "Inter", var(--font-default);
@@ -43,12 +43,13 @@ html, body, .hero{
   z-index: 1;
   padding: 0 5px;
   display: inline-block;
+  color: var(--color-default);
 }
 
 .hero h1 span:before {
   content: "";
   position: absolute;
-  height: 50%;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
