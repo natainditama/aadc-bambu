@@ -32,6 +32,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-google-gtag": "^5.10.0",
     "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-manifest": "^5.4.0",
     "gatsby-plugin-offline": "^6.4.0",
