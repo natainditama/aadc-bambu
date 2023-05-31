@@ -31,7 +31,7 @@ export default function ScrollTop() {
 
   return (
     <a
-      href="#"
+      href="#top"
       ref={scrollTop}
       onClick={handleScrollToTop}
       className="scroll-top d-flex align-items-center justify-content-center"

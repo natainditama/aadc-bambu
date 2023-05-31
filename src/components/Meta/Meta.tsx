@@ -20,7 +20,7 @@ export default function Meta({ title, description, pathname, children }: SEOProp
 
   return (
     <>
-      <html lang={`${lang}`} />
+      <html lang={`${lang}`} id="top" />
       <title>
         {seo.title} - {titleTemplate}
       </title>
@@ -43,6 +43,16 @@ export default function Meta({ title, description, pathname, children }: SEOProp
       <meta name="twitter:creator" content="@natainditama" />
       <meta name="twitter:site" content="@aadc-bambu" />
       <meta property="twitter:image" content={`${seo.image}`} />
+
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B175S9HZHB"></script>
+      <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+
+           gtag('config', 'G-B175S9HZHB');
+      </script>
       {children}
     </>
   );
