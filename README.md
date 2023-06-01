@@ -59,7 +59,7 @@ Removed sections:
 <br />
 
 <div align="center"> 
-  <img src="https://camo.githubusercontent.com/5b5febbd38e437973ac9748f10c2fc3a7f214ad3ac74423af550d19e5916e4ab/68747470733a2f2f706c616365686f6c642e636f2f363030783430303f746578743d596f75722b53637265656e73686f742b68657265" alt="screenshot" />
+  <img src="https://github.com/natainditama/aadc-bambu/assets/81244669/c9f69bfe-02ce-4c2a-a606-39fe8793cc2c" alt="screenshot" />
 </div>
 
 <br />
@@ -72,10 +72,10 @@ Removed sections:
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#624bff](https://via.placeholder.com/10/624bff?text=+) #624bff |
-| White Color | ![#fff](https://via.placeholder.com/10/fff?text=+) #fff |
-| Background Color | ![#f9fafb](https://via.placeholder.com/10/f9fafb?text=+) #f9fafb |
-| Text Color | ![#637381](https://via.placeholder.com/10/637381?text=+) #637381 |
+| Primary Color | ![#61872c](https://via.placeholder.com/10/61872c?text=+) #61872c |
+| Secondary Color | ![#161718](https://via.placeholder.com/10/161718?text=+) #161718 |
+| Background Color | ![#fafafa](https://via.placeholder.com/10/fafafa?text=+) #fafafa |
+| Text Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
 <!-- Features -->
 ### Features

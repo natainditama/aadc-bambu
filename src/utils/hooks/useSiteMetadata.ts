@@ -14,8 +14,10 @@ const useSiteMetadata = () => {
           siteMetadata {
             title
             description
+            titleTemplate
             author
             siteUrl
+            image
             lang
           }
         }

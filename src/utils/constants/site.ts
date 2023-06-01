@@ -1,10 +1,10 @@
-interface Socials {
+export interface Social {
   name: string;
-  color: string;
+  color?: string;
   url: string;
 }
 
-const socials: Array<Socials> = [
+export const socialLinks: Array<Social> = [
   {
     name: "facebook",
     color: "#1877F2",
@@ -20,6 +20,9 @@ const socials: Array<Socials> = [
     color: "#000000",
     url: "https://www.tiktok.com/@aadcbambu",
   },
+  {
+    name: "github",
+    color: "#181717",
+    url: "https://github.com/natainditama/aadc-bambu",
+  },
 ];
-
-export { socials, Socials };

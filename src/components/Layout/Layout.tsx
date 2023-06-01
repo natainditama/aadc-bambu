@@ -1,22 +1,30 @@
-import React from "react";
-import { ThemeProvider } from "@material-tailwind/react";
-import { Footer, Header, SEO } from "@/components";
+import React, { PropsWithChildren, useEffect } from "react";
+import { Footer, Header, Preloader, ScrollTop } from "@/components";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import "boxicons/css/boxicons.min.css";
+import AOS from "aos";
 
 const queryClient = new QueryClient();
 
-const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
+export default function Layout({ children }: PropsWithChildren) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+    });  
+    AOS.refresh();  
+  }, [])
+  
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <SEO />
-        <Header  />
+      <Preloader />
+      <Header />
+      <main id="main" data-aos="fade" data-aos-delay="1500">
         {children}
-        <Footer />
-      </ThemeProvider>
+      </main>
+      <Footer />
+      <ScrollTop />
     </QueryClientProvider>
   );
-};
-
-export default Layout;
+}
