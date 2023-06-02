@@ -1,7 +1,6 @@
 import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Meta } from "@/components";
-import { useQuery } from "@tanstack/react-query";
 import { Video } from "@/types/videos";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 import useFetch from "@/utils/hooks/useFetch";
