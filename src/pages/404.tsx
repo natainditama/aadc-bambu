@@ -1,8 +1,10 @@
 import * as React from "react";
-import { Link, HeadFC, PageProps } from "gatsby";
-import { AnimateIn } from "@/components";
+import { Link, HeadFC } from "gatsby";
+import { AnimateIn, Meta } from "@/components";
 
-const NotFoundPage: React.FC<PageProps> = () => {
+export const Head: HeadFC = ({ location }) => <Meta title="Not found" pathname={location.pathname} />;
+
+export default function NotFoundPage() {
   return (
     <AnimateIn delay={1.2}>
       <section id="hero" className="hero d-flex flex-column justify-content-center align-items-center">
@@ -30,8 +32,4 @@ const NotFoundPage: React.FC<PageProps> = () => {
       <div className="my-5 pt-2" />
     </AnimateIn>
   );
-};
-
-export default NotFoundPage;
-
-export const Head: HeadFC = () => <title>Not found</title>;
+}
