@@ -3,35 +3,45 @@
   "version": "1.0.0",
   "private": true,
   "description": "Official AADC Bambu website built with Gatsby",
-  "author": {
-    "email": "natainditama.dev@gmail.com",
-    "name": "Nata Inditama",
-    "url": "https://github.com/natainditama"
-  },
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://aadc-bambu.pages.dev/",
+  "bugs": {
+    "url": "https://github.com/natainditama/aadc-bambu/issues",
+    "email": "natainditama.dev@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/natainditama/aadc-bambu/"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nata Inditama",
+    "email": "natainditama.dev@gmail.com",
+    "url": "https://github.com/natainditama"
+  },
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.1",
     "@popperjs/core": "^2.11.8",
-    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.5",
     "gatsby": "^5.8.0",
+    "gsap": "^3.12.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "split-type": "^0.3.4",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
