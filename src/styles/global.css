@@ -5,20 +5,27 @@
   --color-secondary: #161718;
   --color-background: #fafafa;
   --font-primary: "Inter";
-  --font-default: var(--font-primary), "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: var(--font-primary), "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-secondary: var(--font-primary);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-html, body, .hero{
+html,
+body,
+.hero {
   background-color: var(--color-background);
   color: var(--color-default);
 }
 
-.hero p, .navbar a, .footer, .footer .copyright, .footer .credits{
+.hero p,
+.navbar a,
+.footer,
+.footer .copyright,
+.footer .credits {
   color: var(--color-default);
 }
 
@@ -40,21 +47,21 @@ html, body, .hero{
   max-width: 100%;
 }
 
-.gallery .gallery-item img{
+.gallery .gallery-item img {
   width: 100%;
 }
 
-.header{
+.header {
   backdrop-filter: blur(4px);
-  background-color: rgba(250,250,250, 0.8);
+  background-color: rgba(250, 250, 250, 0.8);
 }
 
-.header .header-social-links a{
+.header .header-social-links a {
   font-size: 18px;
   padding-left: 20px;
 }
 
-.header .header-social-links{
+.header .header-social-links {
   padding-right: 0;
 }
 
@@ -81,7 +88,32 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
-.hero .btn-get-started:hover, .scroll-top:hover {
+.hero .btn-get-started:hover,
+.scroll-top:hover {
   background: var(--color-primary-hover);
 }
 
+/* Firefox */
+.html.loaded * {
+  scrollbar-width: thin;
+  scrollbar-color: #00000050 transparent;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background-color: var(--color-secondary);
+}
+
+html.loaded *::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+html.loaded *::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #00000050;
+}

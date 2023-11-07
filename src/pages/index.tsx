@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import type { HeadFC } from "gatsby";
-import { Meta } from "@/components";
+import { Meta, VideoCard } from "@/components";
 import { Video } from "@/types/videos";
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 import { gsap } from "gsap";
@@ -80,25 +80,10 @@ export default function HomePage() {
           ) : (
             <div className="row gy-4 justify-content-center">
               {data?.items
-                ? data?.items.map((item, index) => {
+                ? data?.items.map((item) => {
                     return (
                       <div className="col-xl-4 col-lg-4 col-md-6" key={item.id.videoId}>
-                        <AnimateIn delay={index <= 2 ? 0.8 : 0}>
-                          <div className="gallery-item h-100">
-                            <img src={item.snippet.thumbnails.medium.url} alt={item.snippet.title} loading="lazy" className="img-fluid" />
-                            <div className="gallery-links d-flex align-items-center justify-content-center">
-                              <a
-                                href={`https://www.youtube.com/watch?v=${item.id.videoId}`}
-                                title={item.snippet.title}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="glightbox preview-link"
-                              >
-                                <i className="bi bi-arrows-angle-expand"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </AnimateIn>
+                        <VideoCard title={item.snippet.title} imageUrl={item.snippet.thumbnails.medium.url} videoId={item.id.videoId} />
                       </div>
                     );
                   })

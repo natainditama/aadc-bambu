@@ -5,3 +5,4 @@ export * from "./Header/Header";
 export * from "./Meta/Meta";
 export * from "./Preloader/Preloader";
 export * from "./ScrollTop/ScrollTop";
+export * from "./VideoCard/VideoCard";

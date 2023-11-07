@@ -11,19 +11,19 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
-:root {
+/* :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
-}
+} */
 
 /* Colors */
-:root {
+/* :root {
   --color-default: #fafafa;
   --color-primary: #27a776;
   --color-secondary: #161718;
-}
+} */
 
 /* Smooth scroll behavior */
 :root {
@@ -136,9 +136,9 @@ h6 {
   background: var(--color-primary);
 }
 
-.page-header .cta-btn:hover {
-  /* background: #2cbc85; */
-}
+/* .page-header .cta-btn:hover {
+  background: #2cbc85;
+} */
 
 /*--------------------------------------------------------------
 # Scroll top button

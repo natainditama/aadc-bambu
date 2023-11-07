@@ -26,6 +26,8 @@ export function Preloader() {
       })
       .then(() => {
         preloader.current?.remove();
+        const root = document?.getElementsByTagName("html")[0];
+        root?.classList?.add("loaded");
       });
   }
 
