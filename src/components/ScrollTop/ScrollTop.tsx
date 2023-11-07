@@ -1,6 +1,6 @@
-import React, { MutableRefObject, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-export default function ScrollTop() {
+export function ScrollTop() {
   const scrollTop = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -14,9 +14,7 @@ export default function ScrollTop() {
 
   function togglescrollTop() {
     if (scrollTop.current) {
-      window.scrollY > 100
-        ? scrollTop.current?.classList.add("active")
-        : scrollTop.current?.classList.remove("active");
+      window.scrollY > 100 ? scrollTop.current?.classList.add("active") : scrollTop.current?.classList.remove("active");
     }
   }
 
@@ -24,18 +22,13 @@ export default function ScrollTop() {
     if (scrollTop.current) {
       window.scrollTo({
         top: 0,
-        behavior: "smooth"
-      })
+        behavior: "smooth",
+      });
     }
   }
 
   return (
-    <a
-      href="#top"
-      ref={scrollTop}
-      onClick={handleScrollToTop}
-      className="scroll-top d-flex align-items-center justify-content-center"
-    >
+    <a href="#top" ref={scrollTop} onClick={handleScrollToTop} className="scroll-top d-flex align-items-center justify-content-center">
       <i className="bi bi-arrow-up-short"></i>
     </a>
   );

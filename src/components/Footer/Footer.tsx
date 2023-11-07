@@ -1,14 +1,14 @@
 import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
 import React from "react";
 
-export default function Footer() {
+export function Footer() {
   const { title } = useSiteMetadata();
 
   return (
     <footer id="footer" className="footer">
       <div className="container">
         <div className="copyright">
-          Copyright &copy;{new Date().getFullYear()}{" "}{title?.replace(" ", "")}. All Rights Reserved.
+          Copyright &copy;{new Date().getFullYear()} {title?.replace(" ", "")}. All Rights Reserved.
         </div>
         <div className="credits">
           Designed by{" "}
