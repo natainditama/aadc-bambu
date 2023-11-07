@@ -12,7 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
@@ -106,7 +107,7 @@ h6 {
 .page-header h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
 
@@ -117,7 +118,8 @@ h6 {
 }
 
 .page-header p {
-  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  /* color: rgba(255, 255, 255, 0.8); */
 }
 
 .page-header .cta-btn {
@@ -135,7 +137,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  /* background: #2cbc85; */
 }
 
 /*--------------------------------------------------------------
@@ -244,10 +246,10 @@ h6 {
   opacity: 0;
 }
 
-#preloader.loaded:before,
+/* #preloader.loaded:before,
 #preloader.loaded:after {
   animation: preloaderfinish 300ms ease-in-out 500ms forwards;
-}
+} */
 
 @keyframes lineincrease {
   0% {
@@ -391,7 +393,7 @@ h6 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -427,11 +429,11 @@ h6 {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: #fff;
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -443,7 +445,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -456,13 +458,12 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -521,7 +522,7 @@ h6 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -535,8 +536,8 @@ h6 {
     border: 1px solid black;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -815,7 +816,6 @@ h6 {
 }
 
 @media (max-width: 575px) {
-
   .gallery-single .swiper-button-prev,
   .gallery-single .swiper-button-next {
     display: none;
@@ -1040,7 +1040,7 @@ h6 {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1096,7 +1096,7 @@ h6 {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1147,7 +1147,7 @@ h6 {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 10px 35px;
@@ -1156,7 +1156,7 @@ h6 {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: rgba(39, 167, 118, 0.8);
 }
 

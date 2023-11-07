@@ -1,26 +1,32 @@
-import React, { useEffect, useRef } from 'react'
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 
-export default function Preloader() {
-  const preloader = useRef<HTMLDivElement>(null)
+export function Preloader() {
+  const preloader = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    loadPreloader()
-    document.addEventListener("DOMContentLoaded", loadPreloader)
+    loadPreloader();
+    document.addEventListener("DOMContentLoaded", loadPreloader);
     window.addEventListener("load", loadPreloader);
     return () => {
-      document.removeEventListener("DOMContentLoaded", loadPreloader)
+      document.removeEventListener("DOMContentLoaded", loadPreloader);
       window.removeEventListener("load", loadPreloader);
-    }
-  }, [])
-  
+    };
+  }, []);
 
   function loadPreloader() {
-     setTimeout(() => {
-       preloader.current?.classList.add("loaded");
-     }, 1000);
-     setTimeout(() => {
-       preloader.current?.remove();
-     }, 2000);
+    preloader.current?.classList.add("loaded");
+    gsap
+      .to("#preloader", {
+        force3D: true,
+        yPercent: -101,
+        duration: 1,
+        delay: 0.6,
+        ease: "power2.inOut",
+      })
+      .then(() => {
+        preloader.current?.remove();
+      });
   }
 
   return (

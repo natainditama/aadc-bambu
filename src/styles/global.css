@@ -22,6 +22,24 @@ html, body, .hero{
   color: var(--color-default);
 }
 
+.title-wrapper {
+  overflow: hidden;
+  text-align: left;
+  width: fit-content;
+  transition: color 200ms;
+}
+
+.title-wrapper .title {
+  display: inline-block;
+  transform-origin: bottom left;
+  opacity: 0;
+}
+
+.animate-in {
+  opacity: 0;
+  max-width: 100%;
+}
+
 .gallery .gallery-item img{
   width: 100%;
 }

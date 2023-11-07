@@ -1,25 +1,22 @@
 import React, { PropsWithChildren, useEffect } from "react";
 import { Footer, Header, Preloader, ScrollTop } from "@/components";
-import AOS from "aos";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-export default function Layout({ children }: PropsWithChildren) {
+gsap.registerPlugin(ScrollTrigger);
+
+export function Layout({ children }: PropsWithChildren) {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false,
-    });  
-    AOS.refresh();  
-  }, [])
-  
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <>
       <Preloader />
       <Header />
-      <main id="main" data-aos="fade" data-aos-delay="1500">
-        {children}
-      </main>
+      <main id="main">{children}</main>
       <Footer />
       <ScrollTop />
     </>
