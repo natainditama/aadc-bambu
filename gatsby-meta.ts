@@ -4,7 +4,7 @@ const metaConfig = {
   description:
     "Jelajahi situs resmi saluran YouTube AADC Bambu dan temukan konten menarik dan lagu-lagu nostalgia yang mengingatkan pada momen berharga. Ikuti perjalanan konten seru dan menghibur dari kami sekarang!",
   author: "natainditama",
-  siteUrl: "https://aadc-bambu.web.app/",
+  siteUrl: "https://aadc-bambu.pages.dev/",
   lang: "id",
   links: {
     github: "https://github.com/natainditama/aadc-bambu",
