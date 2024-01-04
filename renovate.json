@@ -9,6 +9,6 @@
     }
   ],
   "prCreation": "not-pending",
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "stabilityDays": 3
 }
