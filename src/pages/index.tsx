@@ -15,7 +15,9 @@ export const Head: HeadFC = () => <Meta />;
 
 const getVideos = async (url: string, queryParams = "") => {
   return apiClient
-    .get(`${url}?part=snippet&part=id&channelId=${config.YOUTUBE_CHANNEL_ID}&maxResults=12&order=viewCount&type=video&videoDuration=medium${queryParams}`)
+    .get(
+      `${url}?part=snippet&part=id&channelId=${config.YOUTUBE_CHANNEL_ID}&maxResults=12&order=viewCount&type=video&videoDuration=medium${queryParams}`,
+    )
     .then((res) => res.data);
 };
 
@@ -23,18 +25,22 @@ export default function HomePage() {
   const { description } = useSiteMetadata();
   const [queryParams, setQueryParams] = useState(`&key=${config.YOUTUBE_API_KEY}`);
 
-  const { isLoading, data, error } = useSWR([`/search`, queryParams], ([url, queryParams]) => getVideos(url, queryParams), {
-    onErrorRetry: (error, _key, _config, revalidate, { retryCount }) => {
-      if (error.request.status === 404) return;
-      if (error.request.status === 403) return;
+  const { isLoading, data, error } = useSWR(
+    [`/search`, queryParams],
+    ([url, queryParams]) => getVideos(url, queryParams),
+    {
+      onErrorRetry: (error, _key, _config, revalidate, { retryCount }) => {
+        if (error.request.status === 404) return;
+        if (error.request.status === 403) return;
 
-      // Only retry up to 10 times.
-      if (retryCount >= 10) return;
+        // Only retry up to 10 times.
+        if (retryCount >= 10) return;
 
-      // Retry after 5 seconds.
-      setTimeout(() => revalidate({ retryCount }), 5000);
+        // Retry after 5 seconds.
+        setTimeout(() => revalidate({ retryCount }), 5000);
+      },
     },
-  });
+  );
 
   useEffect(() => {
     const split = SplitType.create(document.querySelectorAll(".title"));
@@ -80,7 +86,12 @@ export default function HomePage() {
               </h1>
               <AnimateIn delay={1.1}>
                 <p className="lh-base">{description}</p>
-                <a href={`https://www.youtube.com/channel/${config.YOUTUBE_CHANNEL_ID}`} target="_blank" rel="noopener noreferrer" className="btn-get-started">
+                <a
+                  href={`https://www.youtube.com/channel/${config.YOUTUBE_CHANNEL_ID}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-get-started"
+                >
                   Subscribe
                 </a>
               </AnimateIn>
@@ -131,7 +142,11 @@ export default function HomePage() {
                 ? data?.items.map((item: Video) => {
                     return (
                       <div className="col-xl-4 col-lg-4 col-md-6" key={item.id.videoId}>
-                        <VideoCard title={item.snippet.title} imageUrl={item.snippet.thumbnails.medium.url} videoId={item.id.videoId} />
+                        <VideoCard
+                          title={item.snippet.title}
+                          imageUrl={item.snippet.thumbnails.medium.url}
+                          videoId={item.id.videoId}
+                        />
                       </div>
                     );
                   })

@@ -2,28 +2,26 @@ import { useStaticQuery, graphql } from "gatsby";
 
 interface SiteMetaData {
   site: {
-    siteMetadata: Queries.SiteSiteMetadata ;
+    siteMetadata: Queries.SiteSiteMetadata;
   };
 }
 
 const useSiteMetadata = () => {
-  const { site } = useStaticQuery<SiteMetaData>(
-    graphql`
-      query SiteMetadata {
-        site {
-          siteMetadata {
-            title
-            description
-            titleTemplate
-            author
-            siteUrl
-            image
-            lang
-          }
+  const { site } = useStaticQuery<SiteMetaData>(graphql`
+    query SiteMetadata {
+      site {
+        siteMetadata {
+          title
+          description
+          titleTemplate
+          author
+          siteUrl
+          image
+          lang
         }
       }
-    `
-  );
+    }
+  `);
   return site.siteMetadata;
 };
 

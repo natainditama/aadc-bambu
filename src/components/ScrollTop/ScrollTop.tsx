@@ -28,7 +28,12 @@ export function ScrollTop() {
   }
 
   return (
-    <a href="#top" ref={scrollTop} onClick={handleScrollToTop} className="scroll-top d-flex align-items-center justify-content-center">
+    <a
+      href="#top"
+      ref={scrollTop}
+      onClick={handleScrollToTop}
+      className="scroll-top d-flex align-items-center justify-content-center"
+    >
       <i className="bi bi-arrow-up-short"></i>
     </a>
   );

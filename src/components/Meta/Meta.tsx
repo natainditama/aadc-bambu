@@ -9,7 +9,14 @@ interface SEOProps {
 }
 
 export function Meta({ title, description, pathname, children }: SEOProps) {
-  const { title: defaultTitle, titleTemplate, description: defaultDescription, image, siteUrl, lang } = useSiteMetadata();
+  const {
+    title: defaultTitle,
+    titleTemplate,
+    description: defaultDescription,
+    image,
+    siteUrl,
+    lang,
+  } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
