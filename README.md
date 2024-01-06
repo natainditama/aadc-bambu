@@ -1,26 +1,8 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-
-<!--
-This README is a slimmed down version of the original one.
-Removed sections:
-- Screenshots
-- Running Test
-- Deployment
-- FAQ
-- Acknowledgements
--->
-
 <div align="center">
-  <h1>AADC Bambu</h1>
+
+  <h1>AADC Bambu</h1>  
   <p>
-    Official AADC Bambu website built with Gatsby  
+    Official AADC Bambu website built with Gatsby 
   </p>
 
 <!-- Badges -->
@@ -28,13 +10,13 @@ Removed sections:
   <a href="https://github.com/natainditama/aadc-bambu/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/natainditama/aadc-bambu" alt="contributors" />
   </a>
-  <a href="">
+  <a href="https://github.com/natainditama/aadc-bambu">
     <img src="https://img.shields.io/github/last-commit/natainditama/aadc-bambu" alt="last update" />
   </a>
   <a href="https://github.com/natainditama/aadc-bambu/network/members">
     <img src="https://img.shields.io/github/forks/natainditama/aadc-bambu" alt="forks" />
   </a>
-  <a href="https://github.com/natainditama/aadc-bambuaadc-bambu/stargazers">
+  <a href="https://github.com/natainditama/aadc-bambu/stargazers">
     <img src="https://img.shields.io/github/stars/natainditama/aadc-bambu" alt="stars" />
   </a>
   <a href="https://github.com/natainditama/aadc-bambu/issues/">
@@ -56,19 +38,21 @@ Removed sections:
   </h4>
 </div>
 
-<br />
+<br />  
 
 <div align="center"> 
   <img src="https://github.com/natainditama/aadc-bambu/assets/81244669/c9f69bfe-02ce-4c2a-a606-39fe8793cc2c" alt="screenshot" />
 </div>
 
-<br />
+<br />  
 
 <!-- About the Project -->
-## 🌟 About the Project
+## 📝 About the Project
 
 <!-- Features -->
-### 🎯 Features
+### 🌟 Features
+
+This project includes the following features:
 
 - Clear Navigation
 - Responsive Design
@@ -84,17 +68,13 @@ Removed sections:
 | Background Color | ![#fafafa](https://via.placeholder.com/10/fafafa?text=+) #fafafa |
 | Text Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
-<!-- Environment Variables -->
-### 🔑 Environment Variables
-
-This project relies on the following environment variables:
-
-- GA_TRACKING_ID : The Google Analytics tracking ID.
-- GATSBY_YOUTUBE_API_KEY : The API key for accessing the YouTube API.
-- GATSBY_YOUTUBE_API_URL : The URL for the YouTube API.
-
 <!-- Getting Started -->
-## 🧰 Getting Started
+## 🚀 Getting Started
+
+<!-- Prerequisites -->
+### 🔧 Prerequisites
+
+- [Nodejs](https://nodejs.org/)
 
 <!-- Run Locally -->
 ### 🏃 Run Locally
@@ -114,13 +94,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  yarn
 ```
 
 Start the local server
 
 ```bash
-  npm run develop
+  yarn develop  
 ```
 
 <!-- Contributing -->
@@ -128,30 +108,29 @@ Start the local server
 
 <a href="https://github.com/natainditama/aadc-bambu/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=natainditama/aadc-bambu" />
-</a><br />
+</a><br/>
 
 Contributions are always welcome!
 
-See [contributing](https://github.com/natainditama/aadc-bambu/blob/main/CONTRIBUTING.md) for ways to get started.
+See [contributing.md](https://github.com/natainditama/aadc-bambu/blob/main/.github/CONTRIBUTING.md) for ways to get started.
 
 <!-- Code of Conduct -->
-## 📜 Code of Conduct
-Please read the [Code of Conduct](https://github.com/natainditama/aadc-bambu/blob/main/CODE_OF_CONDUCT.md)
+### 📜 Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/natainditama/aadc-bambu/blob/main/.github/CODE_OF_CONDUCT.md)
 
 <!-- License -->
 ## ⚠️ License
 
-Distributed under the no License. See [LICENSE](https://github.com/natainditama/aadc-bambu/blob/main/LICENSE) for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/natainditama/aadc-bambu/blob/main/LICENSE) file for details
 
 <!-- Contact -->
 ## 🤝 Contact
 
-Nata Inditama - [@natainditama](https://t.me/natainditama) - natainditama.dev@gmail.com
+Contact me for inquiries, suggestions, or contributions via the following channels:
 
-Project Link: [https://github.com/natainditama/aadc-bambu](https://github.com/natainditama/aadc-bambu)
+- [Email](mailto:natainditama.dev@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/natainditama)
+- [GitHub](https://github.com/natainditama)
 
-<!-- Acknowledgements -->
-## 💎 Acknowledgements
-
-- [Gatsbyjs](https://www.gatsbyjs.com/)
-- [Bootstrapmade](https://bootstrapmade.com/)
+Thank you for your support, interest, feedback, and contributions!

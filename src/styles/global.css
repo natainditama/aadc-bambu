@@ -42,6 +42,10 @@ body,
   opacity: 0;
 }
 
+.title-wrapper .title .line {
+  text-align: center !important;
+}
+
 .animate-in {
   opacity: 0;
   max-width: 100%;
