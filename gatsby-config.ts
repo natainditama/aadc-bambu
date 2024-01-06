@@ -21,6 +21,13 @@ const corePlugins = [
       path: `${__dirname}/src/images`,
     },
   },
+  {
+    resolve: "gatsby-source-contentful",
+    options: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+  },
 ];
 
 const devPlugins = [
@@ -43,13 +50,15 @@ const devPlugins = [
 
 const imagePlugins = ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"];
 
-const searchPlugins = ["gatsby-plugin-sitemap", "gatsby-plugin-robots-txt",
-{
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [ process.env.GA_TRACKING_ID ]
-      }
-}
+const searchPlugins = [
+  "gatsby-plugin-sitemap",
+  "gatsby-plugin-robots-txt",
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      trackingIds: [process.env.GA_TRACKING_ID],
+    },
+  },
 ];
 
 const pwaPlugins = [
