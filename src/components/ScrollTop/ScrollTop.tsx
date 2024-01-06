@@ -1,7 +1,9 @@
+import { useLenis } from "@studio-freight/react-lenis";
 import React, { useEffect, useRef } from "react";
 
 export function ScrollTop() {
   const scrollTop = useRef<HTMLAnchorElement>(null);
+  const lenis = useLenis();
 
   useEffect(() => {
     window.addEventListener("load", togglescrollTop);
@@ -20,10 +22,7 @@ export function ScrollTop() {
 
   function handleScrollToTop() {
     if (scrollTop.current) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      lenis.scrollTo(0, {});
     }
   }
 

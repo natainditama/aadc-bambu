@@ -2,6 +2,7 @@ import React, { PropsWithChildren, useEffect } from "react";
 import { Footer, Header, Preloader, ScrollTop } from "@/components";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import ReactLenis, { useLenis } from "@studio-freight/react-lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,9 @@ export function Layout({ children }: PropsWithChildren) {
     <>
       <Preloader />
       <Header />
-      <main id="main">{children}</main>
+      <ReactLenis root>
+        <main id="main">{children}</main>
+      </ReactLenis>
       <Footer />
       <ScrollTop />
     </>
