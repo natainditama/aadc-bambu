@@ -1,6 +1,6 @@
-import { socialLinks } from "@/utils/constants/site";
 import React from "react";
-import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import { socialLinks } from "@/utils/consts";
+import useSiteMetadata from "@/hooks/useSiteMetadata";
 
 export function Header() {
   const { title } = useSiteMetadata();

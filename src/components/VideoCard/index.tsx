@@ -1,7 +1,7 @@
 import React from "react";
-import { AnimateIn } from "../AnimateIn/AnimateIn";
+import { AnimateIn } from "../AnimateIn";
 
-type VideoCardProps = {
+export type VideoCardProps = {
   title: string;
   imageUrl: string;
   videoId: string;

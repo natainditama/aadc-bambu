@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type AnimateInProps = {
+export type AnimateInProps = {
   delay?: number;
 };
 

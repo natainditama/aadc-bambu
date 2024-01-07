@@ -2,7 +2,7 @@ import React, { PropsWithChildren, useEffect } from "react";
 import { Footer, Header, Preloader, ScrollTop } from "@/components";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import ReactLenis, { useLenis } from "@studio-freight/react-lenis";
+import ReactLenis from "@studio-freight/react-lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 

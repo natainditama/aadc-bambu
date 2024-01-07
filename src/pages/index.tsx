@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { graphql, type HeadFC } from "gatsby";
 import { Meta, VideoCard, AnimateIn } from "@/components";
-import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import useSiteMetadata from "@/hooks/useSiteMetadata";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from "split-type";
