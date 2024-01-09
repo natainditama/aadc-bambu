@@ -77,7 +77,11 @@ export default function HomePage({ data }: { data: { allContentfulVideo: Queries
               ? videos.map((item: Queries.ContentfulVideo) => {
                   return (
                     <div className="col-xl-4 col-lg-4 col-md-6" key={item.videoId}>
-                      <VideoCard title={`${item.title}`} imageUrl={`${item.imageUrl}`} videoId={`${item.videoId}`} />
+                      <VideoCard
+                        title={`${item.title}`}
+                        imageUrl={`${item.imageUrl}`.replace("mqdefault", "hqdefault")}
+                        videoId={`${item.videoId}`}
+                      />
                     </div>
                   );
                 })
@@ -95,13 +99,7 @@ export const query = graphql`
       nodes {
         videoId
         title
-        publishedAt
-        description {
-          description
-        }
         imageUrl
-        imageWidth
-        imageHeight
       }
     }
   }
