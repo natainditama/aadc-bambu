@@ -80,7 +80,7 @@ jobs:
           PREFIX_PATHS: 'true'
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          GA_TRACKING_ID: ${{ env.GA_TRACKING_ID }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
