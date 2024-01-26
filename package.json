@@ -20,12 +20,11 @@
     "email": "natainditama.dev@gmail.com",
     "url": "https://github.com/natainditama"
   },
-  "type": "module",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "format": "prettier \"src/**/*.+(ts|js|tsx|jsx|css)\" --write",
+    "format": "prettier \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
     "serve": "gatsby serve",
     "start": "gatsby develop",
@@ -83,8 +82,5 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "typescript": "^5.0.0"
-  },
-  "engines": {
-    "node": ">=16"
   }
 }
