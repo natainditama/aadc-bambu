@@ -78,6 +78,9 @@ jobs:
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
+          CONTENTFUL_ACCESS_TOKEN: ${{ env.CONTENTFUL_ACCESS_TOKEN }
+          CONTENTFUL_SPACE_ID: ${{ env.CONTENTFUL_SPACE_ID }
+          GA_TRACKING_ID: ${{ env.GA_TRACKING_ID }
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
