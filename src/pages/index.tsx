@@ -95,13 +95,7 @@ export const query = graphql`
       nodes {
         videoId
         title
-        publishedAt
-        description {
-          description
-        }
         imageUrl
-        imageWidth
-        imageHeight
       }
     }
   }
