@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { graphql, type HeadFC } from "gatsby";
 import { Meta, VideoCard, AnimateIn } from "@/components";
-import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import useSiteMetadata from "@/hooks/useSiteMetadata";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from "split-type";
@@ -77,7 +77,11 @@ export default function HomePage({ data }: { data: { allContentfulVideo: Queries
               ? videos.map((item: Queries.ContentfulVideo) => {
                   return (
                     <div className="col-xl-4 col-lg-4 col-md-6" key={item.videoId}>
-                      <VideoCard title={`${item.title}`} imageUrl={`${item.imageUrl}`} videoId={`${item.videoId}`} />
+                      <VideoCard
+                        title={`${item.title}`}
+                        imageUrl={`${item.imageUrl}`.replace("mqdefault", "hqdefault")}
+                        videoId={`${item.videoId}`}
+                      />
                     </div>
                   );
                 })

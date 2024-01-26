@@ -37,8 +37,9 @@ const devPlugins = [
       alias: {
         "@/*": "src/",
         "@/components": "src/components/",
-        "@/lib": "src/lib/",
+        "@/hooks": "src/hooks/",
         "@/images": "src/images/",
+        "@/lib": "src/lib/",
         "@/pages": "src/pages/",
         "@/types": "src/types/",
         "@/utils": "src/utils/",

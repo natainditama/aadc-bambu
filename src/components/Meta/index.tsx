@@ -1,14 +1,14 @@
 import React from "react";
-import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import useSiteMetadata from "@/hooks/useSiteMetadata";
 
-interface SEOProps {
+export type MetaProps = {
   title?: string;
   description?: string;
   pathname?: string;
   children?: React.ReactNode;
-}
+};
 
-export function Meta({ title, description, pathname, children }: SEOProps) {
+export function Meta({ title, description, pathname, children }: MetaProps) {
   const {
     title: defaultTitle,
     titleTemplate,

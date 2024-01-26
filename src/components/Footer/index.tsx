@@ -1,4 +1,4 @@
-import useSiteMetadata from "@/utils/hooks/useSiteMetadata";
+import useSiteMetadata from "@/hooks/useSiteMetadata";
 import React from "react";
 
 export function Footer() {

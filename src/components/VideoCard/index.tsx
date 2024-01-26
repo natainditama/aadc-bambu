@@ -1,7 +1,7 @@
 import React from "react";
-import { AnimateIn } from "../AnimateIn/AnimateIn";
+import { AnimateIn } from "../AnimateIn";
 
-type VideoCardProps = {
+export type VideoCardProps = {
   title: string;
   imageUrl: string;
   videoId: string;
@@ -12,7 +12,16 @@ export function VideoCard({ title, imageUrl, videoId }: VideoCardProps) {
     <>
       <AnimateIn>
         <div className="gallery-item h-100">
-          <img src={imageUrl} alt={title} loading="lazy" className="img-fluid" />
+          <img
+            src={imageUrl}
+            alt={title}
+            loading="lazy"
+            className="img-fluid"
+            style={{
+              objectFit: "cover",
+              height: "201px",
+            }}
+          />
           <div className="gallery-links d-flex align-items-center justify-content-center">
             <a
               href={`https://www.youtube.com/watch?v=${videoId}`}
