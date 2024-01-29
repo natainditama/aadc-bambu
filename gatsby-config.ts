@@ -89,7 +89,6 @@ const pwaPlugins = [
 ];
 
 const config: GatsbyConfig = {
-  assetPrefix: pathPrefix,
   siteMetadata: meta,
   pathPrefix,
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
