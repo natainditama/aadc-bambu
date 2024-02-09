@@ -2296,10 +2296,10 @@
   resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.34.tgz#1078ee81aa8a2a1ab9f332d60d9148b8909b53af"
   integrity sha512-sEyzEjfAsTlFgDebMYT5G7tlB0ZHhWkHEoJj0g7W0YYZO093Mh4MU65o1qbNKwRacspdU04ZrA+5Wxwt4dsS7Q==
 
-"@studio-freight/react-lenis@^0.0.40":
-  version "0.0.40"
-  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.40.tgz#47732869672999315686f39322e21535c473a1f8"
-  integrity sha512-LxPK3DtkTZkpnp9AUnNMD6hd5JMI24ZccEogF42s3DJ8vYE9LI7OxEkoWNwa1Um+M0qTHUSEIlIkEySEzF8JIw==
+"@studio-freight/react-lenis@^0.0.43":
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.43.tgz#a70b6401b18fb7d195e6924d768426418ce526b9"
+  integrity sha512-kgRif4MGcmPWuyIWLBc9ghOIQ/ql7lO2YTIZMv2UCohz37G4fCR8+PLCzJl9/q5iP7481pWdAuFJVYf3xJ/rpg==
   dependencies:
     "@studio-freight/hamo" "^0.6.24"
     "@studio-freight/lenis" "^1.0.33"
