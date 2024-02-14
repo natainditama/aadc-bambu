@@ -2282,7 +2282,7 @@
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@studio-freight/hamo@^0.6.24":
+"@studio-freight/hamo@^0.6.28":
   version "0.6.28"
   resolved "https://registry.yarnpkg.com/@studio-freight/hamo/-/hamo-0.6.28.tgz#da8af3edb22c9d70d985c45f2d5aa28f37baf4aa"
   integrity sha512-LVXYJwPToVa4ZVIbFnicg8bmZF8xWebbdtx10/1HAQAjN8xGsTWAdc3BmUUOHtLWFvNJNLSuwdX24njrp7LF7g==
@@ -2292,20 +2292,19 @@
     nanoevents "^9.0.0"
     zustand "^4.4.7"
 
-"@studio-freight/lenis@^1.0.33":
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.34.tgz#1078ee81aa8a2a1ab9f332d60d9148b8909b53af"
-  integrity sha512-sEyzEjfAsTlFgDebMYT5G7tlB0ZHhWkHEoJj0g7W0YYZO093Mh4MU65o1qbNKwRacspdU04ZrA+5Wxwt4dsS7Q==
+"@studio-freight/lenis@^1.0.35-dev.0":
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.35.tgz#039d1064363306f6554b8d676421db647dffd770"
+  integrity sha512-dduQqZERC5EaJSVGBoCt2WdPFQlr39zFewkQxvJcYZrMl1aVTPPIQCnZMqIjl4KZBQIL3kIXes+HP22T9XVh4w==
 
-"@studio-freight/react-lenis@^0.0.43":
-  version "0.0.43"
-  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.43.tgz#a70b6401b18fb7d195e6924d768426418ce526b9"
-  integrity sha512-kgRif4MGcmPWuyIWLBc9ghOIQ/ql7lO2YTIZMv2UCohz37G4fCR8+PLCzJl9/q5iP7481pWdAuFJVYf3xJ/rpg==
+"@studio-freight/react-lenis@^0.0.44":
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.44.tgz#796a103bfabc1445a1e4df2bd600a34fff3ac4d9"
+  integrity sha512-SUEgsRGXUWftXkW8Zzw83TiJVrKk5gEdF/Wj5H7H09MIhczV0M9CyY8efK1UoHaSo0QjhqrjgUscddwooMGC9g==
   dependencies:
-    "@studio-freight/hamo" "^0.6.24"
-    "@studio-freight/lenis" "^1.0.33"
+    "@studio-freight/hamo" "^0.6.28"
+    "@studio-freight/lenis" "^1.0.35-dev.0"
     clsx "^2.0.0"
-    prop-types "^15.8.1"
     zustand "^4.4.7"
 
 "@studio-freight/tempus@^0.0.38":
