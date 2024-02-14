@@ -52,7 +52,7 @@
   "dependencies": {
     "@fontsource/inter": "^5.0.1",
     "@popperjs/core": "^2.11.8",
-    "@studio-freight/react-lenis": "^0.0.43",
+    "@studio-freight/react-lenis": "^0.0.44",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.5",
     "gatsby": "^5.8.0",
