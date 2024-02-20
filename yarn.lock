@@ -2297,10 +2297,10 @@
   resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.35.tgz#039d1064363306f6554b8d676421db647dffd770"
   integrity sha512-dduQqZERC5EaJSVGBoCt2WdPFQlr39zFewkQxvJcYZrMl1aVTPPIQCnZMqIjl4KZBQIL3kIXes+HP22T9XVh4w==
 
-"@studio-freight/react-lenis@^0.0.44":
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.44.tgz#796a103bfabc1445a1e4df2bd600a34fff3ac4d9"
-  integrity sha512-SUEgsRGXUWftXkW8Zzw83TiJVrKk5gEdF/Wj5H7H09MIhczV0M9CyY8efK1UoHaSo0QjhqrjgUscddwooMGC9g==
+"@studio-freight/react-lenis@^0.0.45":
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.45.tgz#a1f3edb5abc7020b1ab4b750521499df7b1c9e6b"
+  integrity sha512-/uwCzYU6A3iSHaaKhKHuMEz2urW8DX6Rc0997QOH3uqu5KcVZS0qA1uKkyhn2RSF9JXFmSB/t7pzKCCAN3rvcA==
   dependencies:
     "@studio-freight/hamo" "^0.6.28"
     "@studio-freight/lenis" "^1.0.35-dev.0"
