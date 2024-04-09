@@ -2295,14 +2295,16 @@
   resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.40.tgz#69c864bea930221317769fa50d6e2e49693b1449"
   integrity sha512-NQd+PYj3B0MoIVwwwC7/lUtxd7HS7a0C+eydJlH5S4hdAFc1bzIb6NpqZUy5lLKL8ExtulTrvVvzHMHK8KShbQ==
 
-"@studio-freight/react-lenis@^0.0.46":
-  version "0.0.46"
-  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.46.tgz#57e749db9f3814b7fe708c005d5b7e71608d9660"
-  integrity sha512-gkhzpafadt2C2Mv7AudNn1o7GrFm9627Jtx3Zf1VXke5nSUpyrVjVRjbkR16kxG8DrEq1iL9orsPT5uhAmPI5Q==
+"@studio-freight/react-lenis@^0.0.47":
+  version "0.0.47"
+  resolved "https://registry.yarnpkg.com/@studio-freight/react-lenis/-/react-lenis-0.0.47.tgz#c83fd5046c36889b8e8306170a5bc7b07fa3a55c"
+  integrity sha512-h+IAqiyiNo8mRo/CA3/sHCqX2IV0tTLyzZRWsdRaLPtM2aBaRqK0+ISYWTUmktQfcf3qvp4hsn0Oeyt9uXwLTQ==
   dependencies:
     "@studio-freight/hamo" "^0.6.28"
     "@studio-freight/lenis" "^1.0.40"
+    "@types/react" "^18.0.0"
     clsx "^2.0.0"
+    react "^18.0.0"
     zustand "^4.4.7"
 
 "@studio-freight/tempus@^0.0.38":
@@ -2582,7 +2584,7 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.0.26":
+"@types/react@^18.0.0", "@types/react@^18.0.26":
   version "18.2.75"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.75.tgz#45d18f384939306d35312def1bf532eb38a68562"
   integrity sha512-+DNnF7yc5y0bHkBTiLKqXFe+L4B3nvOphiMY3tuA5X10esmjqk7smyBZzbGTy2vsiy/Bnzj8yFIBL8xhRacoOg==
@@ -9469,7 +9471,7 @@ react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
     loose-envify "^1.1.0"
     neo-async "^2.6.1"
 
-react@^18.2.0:
+react@^18.0.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
