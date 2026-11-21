@@ -6629,9 +6629,9 @@ graphql@^16.7.1:
   integrity sha512-AjqGKbDGUFRKIRCP9tCKiIGHyriz2oHEbPIbEtcSLSs4YjReZOIPQQWek4+6hjw62H9QShXHyaGivGiYVLeYFQ==
 
 gsap@^3.12.2:
-  version "3.12.7"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.12.7.tgz#1b690def901ac9b21d4909f39c2b52418154463d"
-  integrity sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg==
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.15.1.tgz#593af220d8bec874b30c4f4b2f459057bf6fe5a1"
+  integrity sha512-63yjWRFWj3QRP1UOuD8kcidCcy3nxb1mMRpwHr/xJRvPfm9GtWOXFAYUiL0ro1fgPq2nY53LR+98pAgy9BumBg==
 
 gzip-size@^6.0.0:
   version "6.0.0"
